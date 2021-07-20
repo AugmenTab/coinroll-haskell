@@ -32,6 +32,9 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , http-types
+    , wai
+    , warp
   default-language: Haskell2010
 
 executable coinroll-haskell-exe
@@ -44,6 +47,9 @@ executable coinroll-haskell-exe
   build-depends:
       base >=4.7 && <5
     , coinroll-haskell
+    , http-types
+    , wai
+    , warp
   default-language: Haskell2010
 
 test-suite coinroll-haskell-test
@@ -57,4 +63,7 @@ test-suite coinroll-haskell-test
   build-depends:
       base >=4.7 && <5
     , coinroll-haskell
+    , http-types
+    , wai
+    , warp
   default-language: Haskell2010
